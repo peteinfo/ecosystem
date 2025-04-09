@@ -33,7 +33,7 @@
 #X obj 314 248 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 245 364 dac~;
 #X obj 317 285 delay 100;
-#X obj 193 51 tgl 51 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 193 51 tgl 54 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X floatatom 96 216 5 0 0 0 - - - 0;
 #X obj 68 217 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X floatatom 191 216 5 0 0 0 - - - 0;
@@ -117,7 +117,7 @@
 #X connect 25 1 19 1;
 #X restore 440 128 pd windchime;
 #N canvas 977 38 658 893 banger 0;
-#X obj 193 51 tgl 51 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 193 51 tgl 54 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 59 157 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 170 156 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 288 162 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -414,6 +414,11 @@
 #X obj 358 637 every 13;
 #X obj 455 417 blip 160 100;
 #X obj 643 416 blip 1295 30;
+#X obj 178 643 FM-plink;
+#X obj 192 708 dac~;
+#X obj 197 545 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 200 450 metro 2000;
+#X obj 196 418 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X connect 26 0 34 0;
 #X connect 27 0 35 0;
 #X connect 28 0 26 0;
@@ -451,3 +456,8 @@
 #X connect 46 0 37 0;
 #X connect 47 0 38 0;
 #X connect 48 0 36 0;
+#X connect 51 0 52 0;
+#X connect 51 0 52 1;
+#X connect 53 0 51 0;
+#X connect 54 0 53 0;
+#X connect 55 0 54 0;
